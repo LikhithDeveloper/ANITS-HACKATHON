@@ -78,15 +78,15 @@ Recruiters and hiring managers are often overwhelmed by the sheer volume of appl
 ## 6. Technical Architecture
 
 ### 6.1. Tech Stack
-*   **Frontend:** React.js / Next.js (for a responsive, modern dashboard).
-*   **Backend:** Python (FastAPI or Django).
+*   **Frontend:** React.js (Vite) / Next.js (for a responsive, modern dashboard).
+*   **Backend:** Node.js with Express.js.
 *   **AI/LLM:** 
-    *   Google Gemini Pro / GPT-4o for reasoning and extraction.
-    *   HuggingFace Sentence Transformers for embeddings.
+    *   Google Gemini Pro / GPT-4o (via Node.js SDKs).
+    *   LangChain.js for orchestration and embedding management.
 *   **Database:** 
-    *   PostgreSQL for structured data (User info, Jobs).
-    *   Pinecone / ChromaDB (Vector DB) for semantic matching.
-*   **Orchestration:** LangChain for managing LLM flows.
+    *   MongoDB (Mongoose) for structured data (User info, Jobs).
+    *   Pinecone / MongoDB Atlas Vector Search (for semantic matching).
+*   **Orchestration:** LangChain.js for managing LLM flows.
 
 ### 6.2. Workflow
 1.  **Ingest:** User uploads JD and Resumes.
